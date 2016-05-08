@@ -1,19 +1,27 @@
 //
-//  DKShare.h
-//  DKShare
+//  DKShake.h
+//  Rice
 //
-//  Created by kun on 16/5/8.
-//  Copyright © 2016年 com.ldk. All rights reserved.
+//  Created by liudukun on 15/12/11.
+//  Copyright © 2015年 ZengWh. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for DKShare.
-FOUNDATION_EXPORT double DKShareVersionNumber;
 
-//! Project version string for DKShare.
-FOUNDATION_EXPORT const unsigned char DKShareVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <DKShare/PublicHeader.h>
+#define WeChatAppkey @""
+#define WeChatAppkey @""
+#define QQAppID @""
 
 
+
+@interface DKShare : UIView
+
+
++(DKShare*)showShareViewWithTurnUrl:(NSString*)url vc:(UIViewController *)vc urlImage:(NSString*)imageURL title:(NSString*)title description:(NSString*)description;
+
++(void)hideShareView;
+
+-(void)setFixedImageData:(UIImage*)image;
+
+@end

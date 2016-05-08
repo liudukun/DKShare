@@ -1,0 +1,18 @@
+PODS:
+  - TencentOpenApiSDK (2.9.0):
+    - TencentOpenApiSDK/Basic (= 2.9.0)
+  - TencentOpenApiSDK/Basic (2.9.0)
+  - WeiboSDK (3.0.1)
+  - Weixin (1.5)
+
+DEPENDENCIES:
+  - TencentOpenApiSDK
+  - WeiboSDK
+  - Weixin
+
+SPEC CHECKSUMS:
+  TencentOpenApiSDK: 2c8be7f99581df17570d6d87adefbd5db4ce7721
+  WeiboSDK: 7403a19eaff56cc3d8813da5da6c60d2e7395c94
+  Weixin: 078167ff244c56fa8352506420b6328a13a184a1
+
+COCOAPODS: 0.39.0

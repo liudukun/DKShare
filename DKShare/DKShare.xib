@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DKShare">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vlz-8n-0pl">
+                    <rect key="frame" x="0.0" y="600" width="600" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izd-vV-DNw">
+                            <rect key="frame" x="68" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Umr-M4-Hy2"/>
+                                <constraint firstAttribute="height" constant="40" id="yqx-oN-qHs"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="loginweixin.png"/>
+                            <connections>
+                                <action selector="actionShareButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="h1H-XQ-0ks"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGk-4b-4PG">
+                            <rect key="frame" x="8" y="0.0" width="50" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="l2f-Rs-CA7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egW-z8-IDm">
+                            <rect key="frame" x="168" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="9o4-2I-6r6"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="loginweibo.png"/>
+                            <connections>
+                                <action selector="actionShareButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="V9h-tE-b5n"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGy-K3-OBT">
+                            <rect key="frame" x="218" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="tHo-Pm-Ats"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="loginqq.png"/>
+                            <connections>
+                                <action selector="actionShareButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="f3F-Kl-EIV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukI-nW-EkZ">
+                            <rect key="frame" x="118" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="WbX-x3-0AD"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="pengyouquan.png"/>
+                            <connections>
+                                <action selector="actionShareButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fkc-8P-QSh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rC1-Dq-dZq">
+                            <rect key="frame" x="268" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="ZW3-3f-U5v"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="qzone.png"/>
+                            <connections>
+                                <action selector="actionShareButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="eUd-7v-DVQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="yGk-4b-4PG" firstAttribute="leading" secondItem="Vlz-8n-0pl" secondAttribute="leading" constant="8" id="0GK-Rt-WhN"/>
+                        <constraint firstItem="egW-z8-IDm" firstAttribute="leading" secondItem="ukI-nW-EkZ" secondAttribute="trailing" constant="10" id="2hT-t6-gHs"/>
+                        <constraint firstAttribute="bottom" secondItem="izd-vV-DNw" secondAttribute="bottom" constant="10" id="3cB-qG-LUC"/>
+                        <constraint firstAttribute="bottom" secondItem="yGk-4b-4PG" secondAttribute="bottom" id="7iu-zw-5ro"/>
+                        <constraint firstItem="izd-vV-DNw" firstAttribute="top" secondItem="Vlz-8n-0pl" secondAttribute="top" constant="10" id="Csw-bS-9Le"/>
+                        <constraint firstAttribute="bottom" secondItem="egW-z8-IDm" secondAttribute="bottom" constant="10" id="Gs4-p3-53k"/>
+                        <constraint firstAttribute="height" constant="60" id="Gu2-bB-o2N"/>
+                        <constraint firstItem="yGk-4b-4PG" firstAttribute="top" secondItem="Vlz-8n-0pl" secondAttribute="top" id="LJc-yN-sjl"/>
+                        <constraint firstItem="egW-z8-IDm" firstAttribute="top" secondItem="Vlz-8n-0pl" secondAttribute="top" constant="10" id="SZj-hZ-8Sr"/>
+                        <constraint firstItem="izd-vV-DNw" firstAttribute="leading" secondItem="yGk-4b-4PG" secondAttribute="trailing" constant="10" id="WJZ-98-CKB"/>
+                        <constraint firstAttribute="bottom" secondItem="rC1-Dq-dZq" secondAttribute="bottom" constant="10" id="cxL-7f-9x5"/>
+                        <constraint firstItem="PGy-K3-OBT" firstAttribute="leading" secondItem="egW-z8-IDm" secondAttribute="trailing" constant="10" id="iru-ep-V7B"/>
+                        <constraint firstItem="ukI-nW-EkZ" firstAttribute="top" secondItem="Vlz-8n-0pl" secondAttribute="top" constant="10" id="kD1-Ta-6MQ"/>
+                        <constraint firstAttribute="bottom" secondItem="ukI-nW-EkZ" secondAttribute="bottom" constant="10" id="m6P-FI-kNK"/>
+                        <constraint firstItem="ukI-nW-EkZ" firstAttribute="leading" secondItem="izd-vV-DNw" secondAttribute="trailing" constant="10" id="mG6-Ox-C5q"/>
+                        <constraint firstItem="rC1-Dq-dZq" firstAttribute="top" secondItem="Vlz-8n-0pl" secondAttribute="top" constant="10" id="nfd-RO-Go0"/>
+                        <constraint firstAttribute="bottom" secondItem="PGy-K3-OBT" secondAttribute="bottom" constant="10" id="pxw-du-fVd"/>
+                        <constraint firstItem="PGy-K3-OBT" firstAttribute="top" secondItem="Vlz-8n-0pl" secondAttribute="top" constant="10" id="urI-gG-z6R"/>
+                        <constraint firstItem="rC1-Dq-dZq" firstAttribute="leading" secondItem="PGy-K3-OBT" secondAttribute="trailing" constant="10" id="y1e-MN-Zz0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.69274779040404044" green="0.69274779040404044" blue="0.69274779040404044" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Vlz-8n-0pl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WJd-ZJ-fcf"/>
+                <constraint firstAttribute="trailing" secondItem="Vlz-8n-0pl" secondAttribute="trailing" id="dOw-So-6uP"/>
+                <constraint firstAttribute="bottom" secondItem="Vlz-8n-0pl" secondAttribute="bottom" constant="-60" id="vB5-Wf-OBR"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="Vlz-8n-0pl" id="Tu3-9O-p16"/>
+                <outlet property="pengyouquanButton" destination="ukI-nW-EkZ" id="j9u-mo-3qo"/>
+                <outlet property="qqButton" destination="PGy-K3-OBT" id="4Lz-Yc-fOJ"/>
+                <outlet property="qzoneButton" destination="rC1-Dq-dZq" id="kV6-qs-77Q"/>
+                <outlet property="shareWeixinButton" destination="izd-vV-DNw" id="9wY-Vl-rJy"/>
+                <outlet property="weiboButton" destination="egW-z8-IDm" id="m33-N9-fgH"/>
+            </connections>
+            <point key="canvasLocation" x="495" y="311"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginqq.png" width="60" height="60"/>
+        <image name="loginweibo.png" width="64" height="64"/>
+        <image name="loginweixin.png" width="64" height="64"/>
+        <image name="pengyouquan.png" width="64" height="64"/>
+        <image name="qzone.png" width="56" height="56"/>
+    </resources>
+</document>
