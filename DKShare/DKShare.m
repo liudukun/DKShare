@@ -65,13 +65,18 @@
 
 static DKShare * instance;
 
-+(DKShare*)showShareViewWithTurnUrl:(NSString*)url vc:(UIViewController *)vc urlImage:(NSString*)imageURL title:(NSString*)title description:(NSString*)description{
++(DKShare*)showShareViewWithTurnUrl:(NSString*)url urlImage:(NSString*)imageURL title:(NSString*)title description:(NSString*)description{
     
     if (instance == nil) {
         instance = [[NSBundle mainBundle]loadNibNamed:@"DKShare" owner:self options:nil][0];
     }
+    instance.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    
+    
     [WXApi registerApp:WeChatAppkey];
-    [WeiboSDK registerApp:WeChatAppkey];
+    [WeiboSDK registerApp:WeiboAppKey];
+    [WeiboSDK enableDebugMode:YES];
+
     TencentOAuth * auth = [[TencentOAuth alloc] initWithAppId:QQAppID andDelegate:nil];
     NSLog(@"auth%@",auth);
     
@@ -92,10 +97,8 @@ static DKShare * instance;
     instance.descriptionTitle = description;
     
     
-    [vc.view addSubview:instance];
-    [UIView animateWithDuration:0.5 animations:^{
-        instance.bgView.frame = CGRectMake(0, SCREEN_WIDTH-60, SCREEN_WIDTH, 60);
-    }];
+    [[UIApplication sharedApplication].keyWindow addSubview:instance];
+    instance.bgView.frame = CGRectMake(0, SCREEN_HEIGHT-60, SCREEN_WIDTH, 60);
     
     return instance;
 }
@@ -108,7 +111,7 @@ static DKShare * instance;
 
 +(void)hideShareView{
     [UIView animateWithDuration:0.5 animations:^{
-        instance.bgView.frame = CGRectMake(0, SCREEN_WIDTH, SCREEN_WIDTH, 60);
+        instance.bgView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 60);
     } completion:^(BOOL finished) {
         [instance removeFromSuperview];
 

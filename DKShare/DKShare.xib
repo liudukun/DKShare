@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment version="1792" identifier="iOS"/>
+        <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
@@ -12,7 +12,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vlz-8n-0pl">
-                    <rect key="frame" x="0.0" y="600" width="600" height="60"/>
+                    <rect key="frame" x="0.0" y="540" width="600" height="60"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izd-vV-DNw">
                             <rect key="frame" x="68" y="10" width="40" height="40"/>
@@ -103,7 +103,7 @@
             <constraints>
                 <constraint firstItem="Vlz-8n-0pl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WJd-ZJ-fcf"/>
                 <constraint firstAttribute="trailing" secondItem="Vlz-8n-0pl" secondAttribute="trailing" id="dOw-So-6uP"/>
-                <constraint firstAttribute="bottom" secondItem="Vlz-8n-0pl" secondAttribute="bottom" constant="-60" id="vB5-Wf-OBR"/>
+                <constraint firstAttribute="bottom" secondItem="Vlz-8n-0pl" secondAttribute="bottom" id="vB5-Wf-OBR"/>
             </constraints>
             <connections>
                 <outlet property="bgView" destination="Vlz-8n-0pl" id="Tu3-9O-p16"/>
