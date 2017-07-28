@@ -1,0 +1,57 @@
+QQ: 
+
+1.依赖库:
+Security.framework, 
+libiconv.dylib，
+SystemConfiguration.framework，
+CoreGraphics.Framework、
+libsqlite3.dylib、
+CoreTelephony.framework、
+libstdc++.dylib、
+libz.dylib
+
+2.URL scheme = tencent+appid
+
+3.other linker flags = -fobjc-arc
+
+4.重写 handleOpenURL openURL
+
+Wechat:
+
+1.URL scheme = appid
+
+2.依赖库:
+SystemConfiguration.framework, 
+libz.dylib, 
+libsqlite3.0.dylib, 
+libc++.dylib, 
+Security.framework, 
+CoreTelephony.framework, 
+CFNetwork.framework
+
+3.other link flags = -Objc -all_load
+
+4.重写 handleOpenURL openURL
+
+weibo:
+
+1. 授权地址 :https://api.weibo.com/oauth2/default.html
+
+2. URL scheme = wb+appid
+
+3. Other link flags = -Objc
+
+4. 依赖库: 
+QuartzCore.framework、
+ImageIO.framework、
+SystemConfiguration.framework、
+Security.framework、
+CoreTelephony.framework、
+CoreText.framework、
+UIKit.framework、
+Foundation.framework、
+CoreGraphics.framework 
+libz.dylib、
+libsqlite3.dylib
+
+
